@@ -119,6 +119,15 @@
       <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/psr/http-client" />
       <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/psr/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/tymon/jwt-auth" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/namshi/jose" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/swagger-api/swagger-ui" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/zircote/swagger-php" />
+      <excludeFolder url="file://$MODULE_DIR$/Inventory/vendor/darkaonline/l5-swagger" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

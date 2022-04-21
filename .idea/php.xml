@@ -113,6 +113,15 @@
       <path value="$PROJECT_DIR$/Inventory/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/Inventory/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/Inventory/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/swagger-api/swagger-ui" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/Inventory/vendor/darkaonline/l5-swagger" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

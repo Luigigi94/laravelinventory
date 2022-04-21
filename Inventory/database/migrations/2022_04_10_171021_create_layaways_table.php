@@ -14,7 +14,7 @@ class    CreateLayawaysTable extends Migration
     public function up()
     {
         Schema::create('layaways', function (Blueprint $table) {
-            $table->id('layawayId');
+            $table->id();
             $table->string('name');
             $table->string('phone')->nullable();
             $table->float('totalDebt');

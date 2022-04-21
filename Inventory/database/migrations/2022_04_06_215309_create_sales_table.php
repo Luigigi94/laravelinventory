@@ -14,7 +14,7 @@ class CreateSalesTable extends Migration
     public function up()
     {
         Schema::create('sales', function (Blueprint $table) {
-            $table->id('salesId');
+            $table->id();
             $table->unsignedBigInteger('userId');
             $table->unsignedBigInteger('stateId');
             $table->unsignedBigInteger('productId');

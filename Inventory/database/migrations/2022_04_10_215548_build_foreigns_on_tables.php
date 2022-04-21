@@ -15,7 +15,7 @@ class BuildForeignsOnTables extends Migration
     {
         Schema::table('users', function (Blueprint $table){
             $table->foreign('rolesId')
-            ->references('rolesId')
+            ->references('id')
             ->on('Roles')
             ->onDelete('cascade');
         });
@@ -27,61 +27,61 @@ class BuildForeignsOnTables extends Migration
         });
         Schema::table('Sales', function (Blueprint $table){
            $table->foreign('stateId')
-           ->references('stateId')
+           ->references('id')
            ->on('States')
            ->onDelete('cascade');
         });
         Schema::table('Sales', function (Blueprint $table){
            $table->foreign('productId')
-           ->references('productId')
+           ->references('id')
            ->on('Products')
            ->onDelete('cascade');
         });
         Schema::table('Tickets', function (Blueprint $table){
             $table->foreign('salesId')
-                ->references('salesId')
+                ->references('id')
                 ->on('Sales')
                 ->onDelete('cascade');
         });
         Schema::table('Pays', function (Blueprint $table){
             $table->foreign('salesId')
-                ->references('salesId')
+                ->references('id')
                 ->on('Sales')
                 ->onDelete('cascade');
         });
         Schema::table('Pays', function (Blueprint $table){
             $table->foreign('layawayId')
-                ->references('layawayId')
+                ->references('id')
                 ->on('Layaways')
                 ->onDelete('cascade');
         });
-        Schema::table('Products', function (Blueprint $table){
-            $table->foreign('assignmentId')
-                ->references('assignmentId')
-                ->on('Assignments')
+        Schema::table('Assignments', function (Blueprint $table){
+            $table->foreign('productId')
+                ->references('id')
+                ->on('products')
                 ->onDelete('cascade');
         });
         Schema::table('Assignments', function (Blueprint $table){
             $table->foreign('categoryId')
-                ->references('categoryId')
+                ->references('id')
                 ->on('Categories')
                 ->onDelete('cascade');
         });
         Schema::table('Assignments', function (Blueprint $table){
             $table->foreign('subcategoryId')
-                ->references('subcategoryId')
+                ->references('id')
                 ->on('Subcategories')
                 ->onDelete('cascade');
         });
         Schema::table('image_products', function (Blueprint $table){
             $table->foreign('productId')
-                ->references('productId')
+                ->references('id')
                 ->on('Products')
                 ->onDelete('cascade');
         });
         Schema::table('Orders', function (Blueprint $table){
             $table->foreign('productId')
-                ->references('productId')
+                ->references('id')
                 ->on('Products')
                 ->onDelete('cascade');
         });

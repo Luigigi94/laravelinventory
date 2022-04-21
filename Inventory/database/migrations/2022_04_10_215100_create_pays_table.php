@@ -14,7 +14,7 @@ class CreatePaysTable extends Migration
     public function up()
     {
         Schema::create('pays', function (Blueprint $table) {
-            $table->id('payId');
+            $table->id();
             $table->unsignedBigInteger('salesId');
             $table->unsignedBigInteger('layawayId');
             $table->float('previousDebt');
